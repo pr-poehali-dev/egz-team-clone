@@ -35,27 +35,30 @@ const Index = () => {
       title: 'E-commerce магазин',
       result: '+340% продаж',
       description: 'Увеличили конверсию интернет-магазина за 3 месяца',
-      metrics: ['5x ROI', '2.4M охват', '340% продаж']
+      metrics: ['5x ROI', '2.4M охват', '340% продаж'],
+      image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/813ddd0b-15a5-4301-a69e-a387003314e6.jpg'
     },
     {
       title: 'B2B сервис',
       result: '+250 лидов/мес',
       description: 'Построили систему генерации лидов через Telegram',
-      metrics: ['250+ лидов', '18% конверсия', '60% стоимость']
+      metrics: ['250+ лидов', '18% конверсия', '60% стоимость'],
+      image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/f9dd4d4c-4433-4fcb-8d17-81424c1b9dc4.jpg'
     },
     {
       title: 'Локальный бизнес',
       result: 'ТОП-3 в Яндекс',
       description: 'Вывели в топ по 47 ключевым запросам',
-      metrics: ['ТОП-3 позиции', '+420% трафик', '89% видимость']
+      metrics: ['ТОП-3 позиции', '+420% трафик', '89% видимость'],
+      image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/c719fdd6-9454-477c-babb-b2fbfbf9d23f.jpg'
     }
   ];
 
   const team = [
-    { name: 'Александр Иванов', role: 'Руководитель проектов', experience: '8 лет опыта' },
-    { name: 'Мария Смирнова', role: 'SEO-специалист', experience: '6 лет опыта' },
-    { name: 'Дмитрий Петров', role: 'Таргетолог', experience: '5 лет опыта' },
-    { name: 'Елена Кузнецова', role: 'Контент-маркетолог', experience: '7 лет опыта' }
+    { name: 'Александр Иванов', role: 'Руководитель проектов', experience: '8 лет опыта', image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/ad32b648-1b39-40f1-bfbc-30fc0def86aa.jpg' },
+    { name: 'Мария Смирнова', role: 'SEO-специалист', experience: '6 лет опыта', image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/f00f25af-89a0-4eb2-9ee8-37e26dcc1a99.jpg' },
+    { name: 'Дмитрий Петров', role: 'Таргетолог', experience: '5 лет опыта', image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/160f7aae-edc1-44b7-a450-ca27a40f53bd.jpg' },
+    { name: 'Елена Кузнецова', role: 'Контент-маркетолог', experience: '7 лет опыта', image: 'https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/07e5a361-27ec-4b49-a801-5cb3c1d17432.jpg' }
   ];
 
   const technologies = [
@@ -202,8 +205,12 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {cases.map((caseItem, idx) => (
               <Card key={idx} className="hover-scale overflow-hidden">
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-purple-600/20 flex items-center justify-center">
-                  <Icon name="BarChart3" size={64} className="text-primary/40" />
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={caseItem.image} 
+                    alt={caseItem.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardHeader>
                   <CardTitle className="text-2xl">{caseItem.title}</CardTitle>
@@ -237,8 +244,12 @@ const Index = () => {
             {team.map((member, idx) => (
               <Card key={idx} className="hover-scale text-center">
                 <CardHeader>
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" size={40} className="text-white" />
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardTitle className="text-xl">{member.name}</CardTitle>
                   <CardDescription className="text-base font-medium">{member.role}</CardDescription>
