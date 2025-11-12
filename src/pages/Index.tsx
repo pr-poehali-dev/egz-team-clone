@@ -104,10 +104,10 @@ const Index = () => {
     <div className="min-h-screen">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Zap" size={28} className="text-primary" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              MarketPro
+          <div className="flex items-center gap-3">
+            <img src="https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/d77fa34c-b249-485d-a8a8-4378bb264dfc.jpg" alt="EGZ TEAM" className="h-10 w-10 object-cover rounded-lg" />
+            <span className="text-2xl font-bold text-black">
+              EGZ TEAM
             </span>
           </div>
           <div className="hidden md:flex gap-6">
@@ -122,12 +122,12 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-yellow-50 via-white to-gray-50">
         <div className="container mx-auto text-center">
           <Badge className="mb-6 fade-in" variant="secondary">
             🚀 Эффективный digital-маркетинг
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in text-black">
             Увеличим продажи<br />вашего бизнеса в 3 раза
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto fade-in">
@@ -194,7 +194,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="cases" className="py-20 px-4 bg-gradient-to-br from-purple-50 to-blue-50">
+      <section id="cases" className="py-20 px-4 bg-gradient-to-br from-yellow-50 to-gray-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Успешные кейсы</h2>
@@ -323,7 +323,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-4 bg-gradient-to-br from-purple-50 to-blue-50">
+      <section id="contact" className="py-20 px-4 bg-gradient-to-br from-yellow-50 to-gray-50">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Начнем работать вместе?</h2>
@@ -372,15 +372,15 @@ const Index = () => {
           <div className="mt-12 text-center space-y-4">
             <p className="text-muted-foreground">Или свяжитесь с нами напрямую:</p>
             <div className="flex flex-wrap justify-center gap-6">
-              <a href="mailto:hello@marketpro.ru" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="mailto:hello@egzteam.ru" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Icon name="Mail" size={20} />
-                hello@marketpro.ru
+                hello@egzteam.ru
               </a>
               <a href="tel:+79001234567" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Icon name="Phone" size={20} />
                 +7 900 123-45-67
               </a>
-              <a href="https://t.me/marketpro" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="https://t.me/egzteam" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Icon name="MessageCircle" size={20} />
                 Telegram
               </a>
@@ -389,13 +389,13 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-12 px-4">
+      <footer className="bg-black text-white py-12 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Zap" size={24} className="text-primary" />
-                <span className="text-xl font-bold">MarketPro</span>
+              <div className="flex items-center gap-3 mb-4">
+                <img src="https://cdn.poehali.dev/projects/23658b68-432e-4d9b-9175-02dfd831defd/files/d77fa34c-b249-485d-a8a8-4378bb264dfc.jpg" alt="EGZ TEAM" className="h-8 w-8 object-cover rounded-lg" />
+                <span className="text-xl font-bold">EGZ TEAM</span>
               </div>
               <p className="text-gray-400 text-sm">
                 Эффективный digital-маркетинг для роста вашего бизнеса
@@ -420,14 +420,14 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4">Контакты</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>hello@marketpro.ru</li>
+                <li>hello@egzteam.ru</li>
                 <li>+7 900 123-45-67</li>
-                <li>Telegram: @marketpro</li>
+                <li>Telegram: @egzteam</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>© 2024 MarketPro. Все права защищены.</p>
+            <p>© 2024 EGZ TEAM. Все права защищены.</p>
           </div>
         </div>
       </footer>
